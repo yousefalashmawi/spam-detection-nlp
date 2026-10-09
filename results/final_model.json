@@ -1,0 +1,172 @@
+{
+  "sms": {
+    "selected": {
+      "mode": "clean",
+      "model": "naive_bayes",
+      "cv_f1": 0.96
+    },
+    "cv_grid": [
+      {
+        "mode": "clean",
+        "model": "naive_bayes",
+        "cv_f1": 0.96
+      },
+      {
+        "mode": "clean",
+        "model": "linear_svm",
+        "cv_f1": 0.9588
+      },
+      {
+        "mode": "clean",
+        "model": "logistic_regression",
+        "cv_f1": 0.9564
+      },
+      {
+        "mode": "stopwords",
+        "model": "naive_bayes",
+        "cv_f1": 0.9473
+      },
+      {
+        "mode": "stopwords",
+        "model": "linear_svm",
+        "cv_f1": 0.9466
+      },
+      {
+        "mode": "stopwords",
+        "model": "logistic_regression",
+        "cv_f1": 0.948
+      },
+      {
+        "mode": "stem",
+        "model": "naive_bayes",
+        "cv_f1": 0.9422
+      },
+      {
+        "mode": "stem",
+        "model": "linear_svm",
+        "cv_f1": 0.9411
+      },
+      {
+        "mode": "stem",
+        "model": "logistic_regression",
+        "cv_f1": 0.9468
+      },
+      {
+        "mode": "lemma",
+        "model": "naive_bayes",
+        "cv_f1": 0.9402
+      },
+      {
+        "mode": "lemma",
+        "model": "linear_svm",
+        "cv_f1": 0.9448
+      },
+      {
+        "mode": "lemma",
+        "model": "logistic_regression",
+        "cv_f1": 0.9459
+      }
+    ],
+    "train_messages": 4136,
+    "test_messages": 1035,
+    "train_seconds": 0.4,
+    "predict_ms_per_message": 0.047,
+    "test": {
+      "accuracy": 0.9894,
+      "precision": 0.9839,
+      "recall": 0.9313,
+      "f1": 0.9569,
+      "false_positive_rate": 0.0022,
+      "tp": 122,
+      "fp": 2,
+      "tn": 902,
+      "fn": 9,
+      "roc_auc": 0.9963
+    }
+  },
+  "email": {
+    "selected": {
+      "mode": "clean",
+      "model": "linear_svm",
+      "cv_f1": 0.9908
+    },
+    "cv_grid": [
+      {
+        "mode": "clean",
+        "model": "naive_bayes",
+        "cv_f1": 0.9874
+      },
+      {
+        "mode": "clean",
+        "model": "linear_svm",
+        "cv_f1": 0.9908
+      },
+      {
+        "mode": "clean",
+        "model": "logistic_regression",
+        "cv_f1": 0.9895
+      },
+      {
+        "mode": "stopwords",
+        "model": "naive_bayes",
+        "cv_f1": 0.9874
+      },
+      {
+        "mode": "stopwords",
+        "model": "linear_svm",
+        "cv_f1": 0.9904
+      },
+      {
+        "mode": "stopwords",
+        "model": "logistic_regression",
+        "cv_f1": 0.9894
+      },
+      {
+        "mode": "stem",
+        "model": "naive_bayes",
+        "cv_f1": 0.9871
+      },
+      {
+        "mode": "stem",
+        "model": "linear_svm",
+        "cv_f1": 0.9894
+      },
+      {
+        "mode": "stem",
+        "model": "logistic_regression",
+        "cv_f1": 0.9885
+      },
+      {
+        "mode": "lemma",
+        "model": "naive_bayes",
+        "cv_f1": 0.9869
+      },
+      {
+        "mode": "lemma",
+        "model": "linear_svm",
+        "cv_f1": 0.9899
+      },
+      {
+        "mode": "lemma",
+        "model": "logistic_regression",
+        "cv_f1": 0.989
+      }
+    ],
+    "train_messages": 24369,
+    "test_messages": 6093,
+    "train_seconds": 30.4,
+    "predict_ms_per_message": 0.859,
+    "test": {
+      "accuracy": 0.992,
+      "precision": 0.9887,
+      "recall": 0.9945,
+      "f1": 0.9916,
+      "false_positive_rate": 0.0104,
+      "tp": 2895,
+      "fp": 33,
+      "tn": 3149,
+      "fn": 16,
+      "roc_auc": 0.9994
+    }
+  }
+}

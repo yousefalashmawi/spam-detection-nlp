@@ -1,0 +1,7 @@
+trained_on,tested_on,model,accuracy,precision,recall,f1,false_positive_rate,tp,fp,tn,fn,roc_auc,train_seconds
+sms,sms,linear_svm,0.9913,0.9766,0.9542,0.9653,0.0033,125,3,901,6,0.9978,0.2
+sms,enron,linear_svm,0.5444,0.5277,0.4414,0.4807,0.3614,1285,1150,2032,1626,0.5428,0.17
+enron,sms,linear_svm,0.314,0.1448,0.9008,0.2495,0.771,118,697,207,13,0.673,15.73
+enron,enron,linear_svm,0.9916,0.9877,0.9948,0.9913,0.0113,2896,36,3146,15,0.9992,15.6
+combined,sms,linear_svm,0.9585,0.775,0.9466,0.8522,0.0398,124,36,868,7,0.9895,16.58
+combined,enron,linear_svm,0.9839,0.992,0.9742,0.983,0.0072,2836,23,3159,75,0.9987,16.55

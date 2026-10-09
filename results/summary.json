@@ -1,0 +1,28 @@
+{
+  "datasets": {
+    "sms": {
+      "messages": 5171,
+      "spam": 653,
+      "ham": 4518,
+      "spam_share": 0.1263,
+      "median_tokens": 12.0,
+      "mean_tokens": 15.4,
+      "train": 4136,
+      "test": 1035
+    },
+    "enron": {
+      "messages": 30462,
+      "spam": 14552,
+      "ham": 15910,
+      "spam_share": 0.4777,
+      "median_tokens": 154.0,
+      "mean_tokens": 306.0,
+      "train": 24369,
+      "test": 6093
+    },
+    "sms_raw_messages": 5574,
+    "enron_raw_messages": 33665
+  },
+  "best_model_by_cv_f1": "linear_svm",
+  "quick_run": false
+}

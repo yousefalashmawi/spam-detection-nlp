@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+results/.cache/
+results/*.log
+data/*.zip
+data/*.csv
+data/*.tsv
+.venv/
+results/notebook_run.log
